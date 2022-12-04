@@ -11,7 +11,7 @@ public class MoodAnalyser {
 
     public String analyseMood() throws MoodAnalyserException {
         try {
-            if (message.toLowerCase().contains("sad"))
+            if (message.toLowerCase().contains("sad"))     //returning the sad 
                 return "SAD";
             else
                 return "HAPPY";
