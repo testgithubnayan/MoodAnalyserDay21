@@ -9,7 +9,7 @@ public class MoodAnalyser {
     public MoodAnalyser() {
     }
 
-    public String analyseMood() throws MoodAnalyserException {
+    public String analyseMood(){
         try {
             if (message.toLowerCase().contains("sad"))
                 return "SAD";
@@ -17,7 +17,7 @@ public class MoodAnalyser {
                 return "HAPPY";
         }
         catch (Exception e){
-            throw new MoodAnalyserException(MoodAnalyserException.exceptionType.NULL,("Message is Null"));
+            return "HAPPY";
         }
     }
 }
